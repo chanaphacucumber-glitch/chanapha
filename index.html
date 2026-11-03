@@ -2,169 +2,115 @@
 <!DOCTYPE html>
 <html lang="th">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>My Awesome Website</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>แนะนำตัวเอง | แตงกวา</title>
 
-<style>
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+    <link href="https://fonts.googleapis.com/css2?family=Charm&display=swap" rel="stylesheet">
 
-body {
-    font-family: Arial, sans-serif;
-    background: linear-gradient(135deg, #74ebd5, #9face6);
-    color: #333;
-    min-height: 100vh;
-    text-align: center;
-}
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-/* เมนู */
-nav {
-    background: rgba(255,255,255,0.85);
-    padding: 20px;
-    box-shadow: 0 3px 15px #0001;
-}
+        body {
+            font-family: 'Charm', cursive;
+            background: linear-gradient(135deg, #e0c3fc, #8ec5fc);
+            color: #4b3f72;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
 
-nav h2 {
-    color: #6956cf;
-}
+        .card {
+            background: white;
+            max-width: 420px;
+            width: 100%;
+            padding: 30px;
+            border-radius: 25px;
+            text-align: center;
+            box-shadow: 0 10px 30px #6c63a033;
+        }
 
-/* ส่วนหัว */
-header {
-    padding: 80px 20px 50px;
-}
+        .profile {
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid #e0c3fc;
+            margin-bottom: 15px;
+        }
 
-header h1 {
-    font-size: 42px;
-    color: white;
-    text-shadow: 2px 3px 8px #555;
-    margin-bottom: 15px;
-}
+        h1 {
+            font-size: 32px;
+            color: #8e44ad;
+            margin-bottom: 10px;
+        }
 
-header p {
-    font-size: 18px;
-    color: white;
-}
+        p {
+            font-size: 20px;
+            margin: 10px 0;
+        }
 
-/* การ์ด */
-.container {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 25px;
-    padding: 30px 20px;
-}
+        .skill {
+            background: #f3e8ff;
+            padding: 12px;
+            border-radius: 15px;
+            margin-top: 15px;
+        }
 
-.card {
-    background: white;
-    width: 280px;
-    padding: 30px 20px;
-    border-radius: 20px;
-    box-shadow: 0 8px 25px #0002;
-    transition: 0.3s;
-}
+        button {
+            margin-top: 20px;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 20px;
+            background: #b28dff;
+            color: white;
+            font-family: inherit;
+            font-size: 20px;
+            cursor: pointer;
+        }
 
-.card:hover {
-    transform: translateY(-12px);
-    box-shadow: 0 15px 30px #0003;
-}
-
-.card h2 {
-    color: #7059d8;
-    margin-bottom: 15px;
-}
-
-.card p {
-    line-height: 1.7;
-}
-
-/* ปุ่ม */
-button {
-    background: linear-gradient(45deg, #7864e9, #ed79c7);
-    color: white;
-    border: none;
-    padding: 14px 28px;
-    border-radius: 30px;
-    font-size: 16px;
-    cursor: pointer;
-    margin-top: 20px;
-    transition: 0.3s;
-}
-
-button:hover {
-    transform: scale(1.08);
-    box-shadow: 0 5px 15px #7775;
-}
-
-/* ส่วนท้าย */
-footer {
-    padding: 25px;
-    color: white;
-    margin-top: 30px;
-}
-
-/* มือถือ */
-@media (max-width: 600px) {
-    header h1 {
-        font-size: 30px;
-    }
-
-    .card {
-        width: 100%;
-        max-width: 320px;
-    }
-}
-</style>
+        button:hover {
+            background: #8e44ad;
+        }
+    </style>
 </head>
 
 <body>
-
-<nav>
-    <h2>My Website</h2>
-</nav>
-
-<header>
-    <h1>ยินดีต้อนรับสู่เว็บไซต์ของฉัน! </h1>
-    <p>เว็บไซต์เล็ก ๆ ที่เต็มไปด้วยความสร้างสรรค์</p>
-    <button onclick="showMessage()">
-         คลิกเพื่อเริ่มต้น
-    </button>
-</header>
-
-<div class="container">
-
     <div class="card">
-        <h2>เกี่ยวกับเรา</h2>
-        <p>พื้นที่แห่งความคิดสร้างสรรค์
-        และไอเดียใหม่ ๆ ที่ไม่มีที่สิ้นสุด</p>
+        <img class="profile"
+             src="https://placehold.co/300x300/e0c3fc/8e44ad?text=My+Photo"
+             alt="รูปโปรไฟล์">
+
+        <h1>สวัสดีค่ะ! 🌷</h1>
+        <h1>ฉันชื่อ แตงกวา</h1>
+
+        <p>🎓 กำลังศึกษาอยู่ที่วิทยาลัยเทคนิคสิงห์บุรี</p>
+        <p>💻 แผนกเทคโนโลยีสารสนเทศ</p>
+        <p>📚 ระดับชั้น ปวช. 2/2</p>
+
+        <div class="skill">
+            <p>✨ ความสามารถ</p>
+            <p>เขียนโค้ดเว็บไซต์ และตัดต่อวิดีโอ</p>
+        </div>
+
+        <button onclick="showMessage()">
+            กดตรงนี้ 💖
+        </button>
+
+        <p id="message"></p>
     </div>
 
-    <div class="card">
-        <h2>ผลงานของฉัน</h2>
-        <p>รวบรวมผลงานและสิ่งที่น่าสนใจ
-        มาไว้ในเว็บไซต์แห่งนี้</p>
-    </div>
-
-    <div class="card">
-        <h2>ติดต่อเรา</h2>
-        <p>ขอบคุณที่เข้ามาเยี่ยมชมเว็บไซต์
-        แล้วพบกันใหม่นะ!</p>
-    </div>
-
-</div>
-
-<footer>
-    <p>© 2026 My Awesome Website | Made with </p>
-</footer>
-
-<script>
-function showMessage() {
-    alert(" ยินดีต้อนรับเข้าสู่เว็บไซต์ของฉัน!");
-}
-</script>
-
+    <script>
+        function showMessage() {
+            document.getElementById("message").innerHTML =
+                "ยินดีที่ได้รู้จักนะคะ 🌸";
+        }
+    </script>
 </body>
 </html>
