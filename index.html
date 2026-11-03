@@ -1,38 +1,170 @@
+
 <!DOCTYPE html>
-<html>
+<html lang="th">
 <head>
-    <title>My Website</title>
-    <style>
-        body {
-            background-color: lightblue;
-            text-align: center;
-            font-family: Arial;
-        }
-        h1 {
-            color: blue;
-        }
-        button {
-            background-color: pink;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 10px;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Awesome Website</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #74ebd5, #9face6);
+    color: #333;
+    min-height: 100vh;
+    text-align: center;
+}
+
+/* เมนู */
+nav {
+    background: rgba(255,255,255,0.85);
+    padding: 20px;
+    box-shadow: 0 3px 15px #0001;
+}
+
+nav h2 {
+    color: #6956cf;
+}
+
+/* ส่วนหัว */
+header {
+    padding: 80px 20px 50px;
+}
+
+header h1 {
+    font-size: 42px;
+    color: white;
+    text-shadow: 2px 3px 8px #555;
+    margin-bottom: 15px;
+}
+
+header p {
+    font-size: 18px;
+    color: white;
+}
+
+/* การ์ด */
+.container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    padding: 30px 20px;
+}
+
+.card {
+    background: white;
+    width: 280px;
+    padding: 30px 20px;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px #0002;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 15px 30px #0003;
+}
+
+.card h2 {
+    color: #7059d8;
+    margin-bottom: 15px;
+}
+
+.card p {
+    line-height: 1.7;
+}
+
+/* ปุ่ม */
+button {
+    background: linear-gradient(45deg, #7864e9, #ed79c7);
+    color: white;
+    border: none;
+    padding: 14px 28px;
+    border-radius: 30px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: scale(1.08);
+    box-shadow: 0 5px 15px #7775;
+}
+
+/* ส่วนท้าย */
+footer {
+    padding: 25px;
+    color: white;
+    margin-top: 30px;
+}
+
+/* มือถือ */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 30px;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 320px;
+    }
+}
+</style>
 </head>
+
 <body>
 
-    <h1>Welcome to My Website </h1>
-    <p>สวัสดี ยินดีต้อนรับเข้าสู่เว็บไซต์ของฉัน</p>
+<nav>
+    <h2>My Website</h2>
+</nav>
 
-    <h2>My Hobby</h2>
-    <p>เล่นเกม</p>
-    <p>ฟังเพลง</p>
-    <p>เล่นโทรศัพท์</p>
-
-    <button onclick="alert('Hello!')">
-        Click Me
+<header>
+    <h1>ยินดีต้อนรับสู่เว็บไซต์ของฉัน! </h1>
+    <p>เว็บไซต์เล็ก ๆ ที่เต็มไปด้วยความสร้างสรรค์</p>
+    <button onclick="showMessage()">
+         คลิกเพื่อเริ่มต้น
     </button>
+</header>
+
+<div class="container">
+
+    <div class="card">
+        <h2>เกี่ยวกับเรา</h2>
+        <p>พื้นที่แห่งความคิดสร้างสรรค์
+        และไอเดียใหม่ ๆ ที่ไม่มีที่สิ้นสุด</p>
+    </div>
+
+    <div class="card">
+        <h2>ผลงานของฉัน</h2>
+        <p>รวบรวมผลงานและสิ่งที่น่าสนใจ
+        มาไว้ในเว็บไซต์แห่งนี้</p>
+    </div>
+
+    <div class="card">
+        <h2>ติดต่อเรา</h2>
+        <p>ขอบคุณที่เข้ามาเยี่ยมชมเว็บไซต์
+        แล้วพบกันใหม่นะ!</p>
+    </div>
+
+</div>
+
+<footer>
+    <p>© 2026 My Awesome Website | Made with </p>
+</footer>
+
+<script>
+function showMessage() {
+    alert(" ยินดีต้อนรับเข้าสู่เว็บไซต์ของฉัน!");
+}
+</script>
 
 </body>
 </html>
-
